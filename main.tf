@@ -59,6 +59,7 @@ data "aws_eks_cluster_auth" "eks_auth" {
   name = module.kubernetes.cluster_name 
 }
 
+##### Creating alantis app with helm ####
 module "atlantis" {
   source            = "./modules/atlantis"
   cluster_name      = module.kubernetes.cluster_name
